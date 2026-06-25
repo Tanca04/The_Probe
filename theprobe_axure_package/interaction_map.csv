@@ -1,0 +1,11 @@
+Screen,Element,Interaction,Axure implementation,Requirements
+Home Missione,Profile cards,Click/Tap opens preflight and sets selected profile,Open Link + Set Variable Value MissionProfile,RF01 RF25
+Pre-flight check,Avvia missione,Enabled only when safety checks are OK,Conditional logic IF battery/load/link/sensors OK,RF02 RF03 RF15 RNF01
+Missione attiva,Mode switch,Manuale/Assistito/Automatico states visible,Dynamic Panel State,RF04 RF05 RF10
+Missione attiva,AI Agent button,Opens command panel,Open Link,RF07 RF08 RF09
+AI Agent,Confirm command,Executes only after explicit confirmation,Show/Hide modal + Open Link,RF09 RNF07
+All active flows,Takeover manuale,Always returns to manual flight dashboard,Open Link to Missione attiva + Set mode Manuale,RF06 RNF02
+Controllo braccia,Arm controls,Separated from flight controls,Dynamic panel / disabled widgets,RF11 RF12 RF13
+Controllo braccia,Presa assistita,AI proposes grab and asks confirmation,Show confirmation panel,RF14 RF15
+Warning sicurezza,Accetta deviazione / Manuale / Stop,User chooses response to risk,Button group with 3 paths,RF16 RF17 RF18 RF19 RF20
+Archivio missioni,Search/filter,Filter saved mission cards by metadata,Text field + repeaters / simulated filters,RF27 RF28 RF29 RF30

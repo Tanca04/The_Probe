@@ -1,0 +1,51 @@
+Code,Title,Requirement
+RF01,Creazione missione,"Il sistema deve permettere all’utente di creare una nuova missione scegliendo un profilo tra Ispezione, Trasporto, Creator, Guidata, Professionale e Volo libero."
+RF02,Controllo stato pre-volo,"Il sistema deve mostrare prima del decollo batteria, connettività, memoria, camera, microfono, braccia meccaniche, peso del carico e stato dei sensori essenziali."
+RF03,Blocco del decollo in condizioni critiche,"Il sistema deve impedire l’avvio della missione se batteria, carico, connessione o sensori sono sotto soglie minime di sicurezza."
+RF04,Pilotaggio manuale,Il sistema deve consentire il pilotaggio manuale del drone tramite app e/o controller compatibile.
+RF05,Modalità automatica,"Il sistema deve consentire l’esecuzione automatica di task semplici, ripetitivi o preconfigurati."
+RF06,Takeover manuale,Il sistema deve permettere all’utente di interrompere in qualsiasi momento un’azione automatica e riprendere il controllo manuale.
+RF07,AI agent con input vocale,"Il sistema deve accettare comandi vocali per funzioni supportate, come stabilizzazione, tracking, rientro, salvataggio o attivazione profilo."
+RF08,AI agent con input testuale,Il sistema deve accettare comandi scritti come alternativa ai comandi vocali.
+RF09,Interpretazione e conferma comando AI,Il sistema deve mostrare all’utente il comando interpretato dall’AI prima di eseguire azioni critiche.
+RF10,Livelli di autonomia,"Il sistema deve offrire almeno tre livelli: Manuale, Assistito e Automatico."
+RF11,Stabilizzazione per uso braccia,Il sistema deve mantenere il drone fermo/stabile prima e durante l’uso delle braccia meccaniche.
+RF12,Controllo alternato drone-braccia,"Il sistema deve separare chiaramente i comandi di volo dai comandi delle braccia, permettendo un uso alternato."
+RF13,Controllo manuale delle braccia,"Il sistema deve consentire all’utente di controllare manualmente l’apertura, chiusura e movimento delle braccia meccaniche."
+RF14,Presa assistita,"Il sistema deve offrire una modalità di presa assistita dall’AI, con conferma umana prima della chiusura o del rilascio."
+RF15,Rilevamento peso carico,Il sistema deve mostrare peso stimato o dichiarato del carico e confrontarlo con il limite del profilo.
+RF16,Rilevamento ostacoli,Il sistema deve rilevare ostacoli vicini e mostrare distanza e direzione rispetto al drone.
+RF17,Warning multimodali,"Il sistema deve comunicare warning con feedback visivo, aptico e sonoro."
+RF18,Gestione persone nell’area,Il sistema deve segnalare la presenza di persone o movimento umano quando rilevabile dai sensori/camera.
+RF19,Deviazione proposta dall’AI,"Il sistema deve proporre deviazioni o correzioni di traiettoria in presenza di ostacoli, lasciando all’utente scelta o takeover."
+RF20,Rientro sicuro,"Il sistema deve proporre o attivare rientro sicuro in caso di batteria bassa, connessione instabile o rischio elevato."
+RF21,Feed video real-time,Il sistema deve mostrare il feed video del drone durante il volo e le operazioni con braccia.
+RF22,Tracking soggetto,Il sistema deve permettere di selezionare un soggetto nel feed video e mantenerlo inquadrato tramite AI.
+RF23,Gestione camera,"Il sistema deve permettere di controllare registrazione, foto, orientamento camera e stato della ripresa."
+RF24,Funzioni audio,"Il sistema deve permettere ascolto da microfono drone, input vocale da smartphone e, se presente, output da speaker drone."
+RF25,Dashboard real-time,"Il sistema deve mostrare durante la missione batteria, altezza, posizione, distanza ostacoli, modalità attiva, connessione e informazioni specifiche del profilo."
+RF26,Personalizzazione dashboard,"Il sistema deve permettere all’utente di aggiungere, rimuovere o riordinare indicatori non critici."
+RF27,Salvataggio missione,"Il sistema deve salvare foto, video, audio, telemetria, warning, note e riepilogo missione."
+RF28,Backup locale e cloud,Il sistema deve supportare salvataggio locale e backup cloud opzionale o automatico.
+RF29,Condivisione missioni/procedure,"Il sistema deve permettere di condividere missioni, procedure o dati con collaboratori autorizzati."
+RF30,Archivio e ricerca missioni,"Il sistema deve permettere di cercare missioni salvate per data, profilo, luogo, tag o tipo di dati raccolti."
+RNF01,Sicurezza prima della velocità,"Il sistema deve privilegiare sicurezza, stabilità e precisione rispetto alla rapidità di esecuzione."
+RNF02,Controllo umano preservato,Il sistema deve mantenere sempre una possibilità chiara di intervento umano nelle azioni automatiche.
+RNF03,Basso carico cognitivo,"L’interfaccia deve evitare sovraccarico informativo, mostrando solo dati necessari al contesto e al profilo."
+RNF04,Precisione operativa,"Il sistema deve supportare manovre fini per ispezione, riprese e manipolazione."
+RNF05,Affidabilità della stabilizzazione,La modalità stabilizzazione deve essere sufficientemente affidabile da consentire l’uso delle braccia senza controllo simultaneo del volo.
+RNF06,Responsività dei comandi,I comandi manuali e i warning critici devono avere latenza percepita bassa.
+RNF07,Comprensibilità dell’AI,"Le decisioni o proposte AI devono essere spiegate in modo breve, contestuale e non tecnico."
+RNF08,Modularità dei profili,Il sistema deve essere modulare e adattabile a use case diversi senza confondere l’utente.
+RNF09,Usabilità per principianti,"Il sistema deve essere utilizzabile da utenti con esperienza limitata tramite linguaggio semplice, guida passo-passo e default sicuri."
+RNF10,Efficienza per esperti,"Il sistema deve offrire scorciatoie, profili salvati e personalizzazione per utenti esperti/frequenti."
+RNF11,Tolleranza agli errori,"Il sistema deve prevenire azioni involontarie, soprattutto cambio modalità, rilascio carico, decollo, rientro e cancellazione dati."
+RNF12,Visibilità dello stato,"Il sistema deve rendere sempre chiari stato del drone, modalità attiva, stabilità, batteria e connessione."
+RNF13,Accessibilità dei feedback,"Le informazioni critiche devono essere percepibili con più canali: visuale, aptico e sonoro dove opportuno."
+RNF14,Persistenza dei dati,I dati di missione devono restare recuperabili anche in caso di chiusura app o assenza temporanea di cloud.
+RNF15,Privacy e controllo dati,"Foto, video, audio e telemetria devono essere salvati e condivisi solo con consenso esplicito dell’utente."
+RNF16,Robustezza in ambienti reali,"Il sistema deve considerare vento, spazi stretti, ostacoli, persone e perdita di segnale."
+RNF17,Scalabilità del carico informativo,Il sistema deve poter gestire missioni semplici e professionali senza usare la stessa schermata per tutto.
+RNF18,Esperienza utente rassicurante,"Il sistema deve comunicare controllo, affidabilità e calma, evitando ansia operativa."
+RNF19,Continuità tra app e smart object,L’interazione digitale deve corrispondere chiaramente al comportamento fisico del drone e delle braccia.
+RNF20,Manutenibilità concettuale del prototipo,Le funzioni devono essere organizzate in modo che sia possibile testarle in prototipo Axure senza implementare realmente il drone.
